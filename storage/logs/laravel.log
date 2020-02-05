@@ -1,0 +1,26 @@
+[2019-09-30 08:39:00] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (Error(code: 0): Class 'Monolog\\Handler\\RotatingFileHandler' not found at C:\\xampp\\htdocs\\dulich-new\\project-real\\project_travel - Copy\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:254)
+[stacktrace]
+#0 C:\\xampp\\htdocs\\dulich-new\\project-real\\project_travel - Copy\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(178): Illuminate\\Log\\LogManager->createDailyDriver(Array)
+#1 C:\\xampp\\htdocs\\dulich-new\\project-real\\project_travel - Copy\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(102): Illuminate\\Log\\LogManager->resolve('daily')
+#2 C:\\xampp\\htdocs\\dulich-new\\project-real\\project_travel - Copy\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(90): Illuminate\\Log\\LogManager->get('daily')
+#3 C:\\xampp\\htdocs\\dulich-new\\project-real\\project_travel - Copy\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(79): Illuminate\\Log\\LogManager->driver('daily')
+#4 C:\\xampp\\htdocs\\dulich-new\\project-real\\project_travel - Copy\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(217): Illuminate\\Log\\LogManager->channel('daily')
+#5 [internal function]: Illuminate\\Log\\LogManager->Illuminate\\Log\\{closure}('daily', 0)
+#6 C:\\xampp\\htdocs\\dulich-new\\project-real\\project_travel - Copy\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(1034): array_map(Object(Closure), Array, Array)
+#7 C:\\xampp\\htdocs\\dulich-new\\project-real\\project_travel - Copy\\vendor\\laravel\\framework\\src\\Illuminate\\Support\\Collection.php(1129): Illuminate\\Support\\Collection->map(Object(Closure))
+#8 C:\\xampp\\htdocs\\dulich-new\\project-real\\project_travel - Copy\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(218): Illuminate\\Support\\Collection->flatMap(Object(Closure))
+#9 C:\\xampp\\htdocs\\dulich-new\\project-real\\project_travel - Copy\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(178): Illuminate\\Log\\LogManager->createStackDriver(Array)
+#10 C:\\xampp\\htdocs\\dulich-new\\project-real\\project_travel - Copy\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(102): Illuminate\\Log\\LogManager->resolve('stack')
+#11 C:\\xampp\\htdocs\\dulich-new\\project-real\\project_travel - Copy\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(90): Illuminate\\Log\\LogManager->get('stack')
+#12 C:\\xampp\\htdocs\\dulich-new\\project-real\\project_travel - Copy\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(498): Illuminate\\Log\\LogManager->driver()
+#13 C:\\xampp\\htdocs\\dulich-new\\project-real\\project_travel - Copy\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(114): Illuminate\\Log\\LogManager->error('Maximum executi...', Array)
+#14 C:\\xampp\\htdocs\\dulich-new\\project-real\\project_travel - Copy\\app\\Exceptions\\Handler.php(37): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalErrorException))
+#15 C:\\xampp\\htdocs\\dulich-new\\project-real\\project_travel - Copy\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(81): App\\Exceptions\\Handler->report(Object(Symfony\\Component\\Debug\\Exception\\FatalErrorException))
+#16 C:\\xampp\\htdocs\\dulich-new\\project-real\\project_travel - Copy\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\HandleExceptions.php(123): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleException(Object(Symfony\\Component\\Debug\\Exception\\FatalErrorException))
+#17 [internal function]: Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleShutdown()
+#18 {main}
+"} 
+[2019-09-30 08:39:00] local.ERROR: Maximum execution time of 30 seconds exceeded {"exception":"[object] (Symfony\\Component\\Debug\\Exception\\FatalErrorException(code: 1): Maximum execution time of 30 seconds exceeded at C:\\xampp\\htdocs\\dulich-new\\project-real\\project_travel - Copy\\vendor\\monolog\\monolog\\src\\Monolog\\Handler\\RotatingFileHandler.php:25)
+[stacktrace]
+#0 {main}
+"} 
