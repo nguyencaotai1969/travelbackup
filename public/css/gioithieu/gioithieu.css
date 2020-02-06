@@ -1,0 +1,36 @@
+.gioithieu {
+    color: #310bff !important;
+    border-bottom: 1px solid #310bff !important;
+}
+
+.top-nav {
+    background: #332d2d;
+}
+
+.how-section1 {
+    margin-top: 64px;
+    padding: 2%;
+}
+
+.how-section1 h4 {
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.how-section1 .subheading {
+    color: #3931af;
+    font-size: 20px;
+}
+
+.how-img {
+    text-align: center;
+}
+
+
+@media (max-width: 700px) {
+    .how-section1 {
+        margin-top: 64px;
+        padding: 10%;
+    }
+}

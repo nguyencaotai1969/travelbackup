@@ -1,0 +1,45 @@
+.lienhe {
+    color: #310bff !important;
+    border-bottom: 1px solid #310bff !important;
+}
+
+.submit {
+    background-color: #0b5cb3;
+    color: #f8f9fa;
+}
+
+#textarea {
+    width: 94%;
+}
+
+a {
+    color: red;
+}
+
+.navbar.top-nav {
+    background: #332d2d;
+}
+
+.tour-gio-vang {
+    color: yellow;
+    padding: 16px;
+    margin-bottom: -2px;
+}
+
+.tour-gio-vang::after {
+    content: "";
+    width: 100px;
+    position: absolute;
+    margin: 0 auto;
+    height: 3px;
+    background: rgba(255, 0, 82, 0.2);
+    left: 0;
+    right: 0;
+    bottom: 11px;
+}
+
+.infor-tour {
+    margin-top: 84px !important;
+}
+
+
