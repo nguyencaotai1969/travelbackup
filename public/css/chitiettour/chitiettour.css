@@ -1,0 +1,88 @@
+.vertical-tabs {
+    font-size: 14px;
+    padding: 10px;
+    color: #008000
+}
+
+.vertical-tabs .nav-tabs .nav-link {
+    background: #fff;
+    border: 1px solid transparent;
+    color: black;
+    height: 37px
+}
+
+.vertical-tabs .nav-tabs .nav-link.active {
+    background-color: #009900 !important;
+    border-color: transparent !important;
+    color: #fff;
+}
+
+.vertical-tabs .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: 0rem !important;
+}
+
+.vertical-tabs .tab-content > .active {
+    background: #fff;
+    display: block;
+}
+
+.vertical-tabs .nav.nav-tabs {
+    border-bottom: 0;
+    border-right: 1px solid transparent;
+    display: block;
+    margin-right: 20px;
+    padding-right: 15px;
+}
+
+.vertical-tabs div.tab-content {
+    border: solid 1px #4CAF50 !important;
+    max-height: 100%;
+}
+
+.vertical-tabs .sv-tab-panel {
+    background: #fff;
+    padding-top: 14px;
+}
+
+.vertical-tabs div#home-v.tab-pane .sv-tab-panel {
+    background: #a6dba6
+}
+
+.vertical-tabs div#profile-v.tab-pane .sv-tab-panel {
+    background: #99d699;
+}
+
+.vertical-tabs div#messages-v.tab-pane .sv-tab-panel {
+    background: #8cd18c
+}
+
+.vertical-tabs div#settings-v.tab-pane .sv-tab-panel {
+    background: #80cc80
+}
+
+.chitiettour {
+    margin-top: 85px;
+}
+
+.danhsachtour {
+    color: #1000ff;
+    padding: 20px;
+    margin-bottom: 37px;
+    font-family: 'Pattaya', sans-serif;
+
+}
+
+.danhsachtour::after {
+    content: "";
+    width: 100px;
+    position: absolute;
+    margin: 0 auto;
+    height: 3px;
+    border-radius: 35%;
+    background: rgba(0, 43, 255, 0.78);
+    left: 0;
+    right: 0;
+    bottom: 11px;
+}
+
