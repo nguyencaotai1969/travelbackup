@@ -72,7 +72,7 @@ class TourController extends Controller
                     ->orderBy('ngaydang', 'desc')
                     ->paginate(10);
                 if( $data['search']->count() <= 0)
-                    $data['err'] = 'Không có giữ liệu !';
+                    $data['err'] = 'Không có dữ liệu !';
 
             }
 
@@ -110,9 +110,9 @@ class TourController extends Controller
             ->first();
 //        List tour
         $listtour = DB::table('tb_tour')
-            ->where('id_diemden','like','%'.' '.$id)
-            ->orWhere('id_diemden','like','%'.' '.$id.' '.'%')
-            ->orWhere('id_diemden','like',$id.' '.'%')
+            ->where('list_slug','like','%'.' '.$id)
+            ->orWhere('list_slug','like','%'.' '.$id.' '.'%')
+            ->orWhere('list_slug','like',$id.' '.'%')
             ->paginate(5);
         $listnews = DB::table('tb_news')
             ->limit(5)
