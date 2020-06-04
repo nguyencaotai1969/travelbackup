@@ -98,12 +98,12 @@
                                             <div class="form-group">
                                                 <label>Điểm đến</label><br>
                                                     @foreach ($diem_den as $diemden)
-                                                        <input type="checkbox" name="id_diemden" value="{{$diemden->id}}">{{$diemden->name}}
+                                                        <input type="checkbox" name="diemden[]" value="{{$diemden->slug}}">{{$diemden->name}}
                                                     @endforeach
 
                                             </div>
                                         </div>
-
+                                        
                                             <div class="col-md-6">
                                                 <div class="form-group">
                                                 <label>Miền</label><br>

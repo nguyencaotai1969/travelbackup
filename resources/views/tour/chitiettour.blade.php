@@ -12,7 +12,7 @@
             <div class="col-md-5 pt-3">
 
                 <img class="col-md-12" src="../img/tour/{{$detail->avatar}}" alt="" width="100%">
-                <ul class="rating pt-4"><b> Đánh giá :                     <span>{{$detail->danhgia}}</span>
+                <ul class="rating pt-4"><b> Đánh giá :<span>{{$detail->danhgia}}</span>
                     </b>
                     <li class="fa fa-star ngoisao text-warning"></li>
                     <li class="fa fa-star ngoisao text-warning"></li>

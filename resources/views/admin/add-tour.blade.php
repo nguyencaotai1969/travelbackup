@@ -74,13 +74,10 @@
                                     </div>
                                     <div class="form-group">
                                         <label>Điểm đến</label><br>
-
-                                        <select name="diemden[]" id="">
                                         @foreach($listDes as $des)
-                                            <option value="{{$des->id}}" > {{$des->name}}</option>
+                                            <input type="checkbox" name="diemden[]" value="{{$des->slug}}">{{$des->name}}
                                         @endforeach
-                                        </select>
-                                    </div>
+                                    </div>  
                                     <div>
                                         <input type="file" name="avatar">
                                     </div>

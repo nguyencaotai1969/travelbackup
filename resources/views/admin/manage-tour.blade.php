@@ -61,7 +61,7 @@
                                 </button>
                             </td>
                             <td><img style="width: 100%" src="../../img/tour/{{$tour->avatar}}"></td>
-                            <td class="none-manage-tour">{{$tour->id_diemden}}</td>
+                            <td class="none-manage-tour">{{$tour->list_slug}}</td>
                             <td class="none-manage-tour">{{$tour->id_mien}}</td>
 
 

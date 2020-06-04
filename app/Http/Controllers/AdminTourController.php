@@ -67,7 +67,7 @@ class AdminTourController extends Controller
 //      Ghi DB
             $arr = $request->get('diemden');
 //            print_r($arr);
-            $id_diemden =  implode(' ', $arr);
+            $slug_diemden =  implode(' ', $arr);
             $dataInsert['name'] = $request->get('name');
             $dataInsert['gia'] = $request->get('gia');
             $dataInsert['giamoi'] = $request->get('giamoi');
@@ -81,7 +81,7 @@ class AdminTourController extends Controller
             $dataInsert['sochodadat'] = 0;
             $dataInsert['id_user'] = 1;
             $dataInsert['slug'] = str_slug($request->get('name')).'.'.rand(30,500).'.html';
-            $dataInsert['id_diemden'] = $id_diemden;
+            $dataInsert['list_slug'] = $slug_diemden;
             $dataInsert['id_mien'] = $request->get('mien');
             $dataInsert['id_status'] = 1;
             $dataInsert['sochodadat'] = 0;
@@ -144,7 +144,7 @@ class AdminTourController extends Controller
                 'sochodadat'=>'required|integer',
                 'id_status'=>'required|integer',
                 'chitiet'=>'required',
-                'id_diemden'=>'required',
+                'diemden'=>'required',
                 'id_mien'=>'required|integer',
                 'danhgia'=>'required',
             ];
@@ -164,7 +164,7 @@ class AdminTourController extends Controller
                 'id_status.integer' => 'Trạng thái phải là số nguyên!',
                 'luuy.required' => 'Lưu ý không được để trống!',
                 'chitiet.required' => 'Chi tiết không được để trống!',
-                'id_diemden.required' => 'Điểm đến không được để trống!',
+                'diemden.required' => 'Điểm đến không được để trống!',
                 'id_mien.required'=> 'ID miền không được để trống!',
                 'id_mien.integer'=> 'ID miền phải là số!',
                 'danhgia.required'=> 'Đánh giá không được để trống!'
@@ -177,6 +177,8 @@ class AdminTourController extends Controller
                     ->withInput();
             }
 //      Ghi DB
+            $arr = $request->get('diemden');
+            $slug_diemden =  implode(' ', $arr);
             $dataInsert['name'] = $request->get('name');
             $dataInsert['gia'] = $request->get('gia');
             $dataInsert['giamoi'] = $request->get('giamoi');
@@ -194,7 +196,7 @@ class AdminTourController extends Controller
                 $dataInsert['avatar'] = str_slug($dataInsert['name']).'.'.$link_save_db;
             }
             $dataInsert['id_user'] = 1;
-            $dataInsert['id_diemden'] = $request->get('id_diemden');
+            $dataInsert['list_slug'] = $slug_diemden;
             $dataInsert['id_mien'] = $request->get('id_mien');
             $dataInsert['ngaydang'] = date("Y-m-d H:i:s");
             $dataInsert['danhgia'] = $request->get('danhgia');
